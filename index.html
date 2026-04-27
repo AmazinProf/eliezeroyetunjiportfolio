@@ -284,6 +284,17 @@ section{padding:110px 6vw}
   color:#1558a8;font-size:.75rem;
 }
 
+.proj-link{
+  display:inline-flex;align-items:center;gap:8px;margin-top:14px;
+  padding:8px 16px;border:1px solid rgba(26,140,158,.35);border-radius:2px;
+  background:rgba(26,140,158,.07);
+  font-family:'DM Mono',monospace;font-size:.68rem;color:#1a8c9e;
+  text-decoration:none;letter-spacing:.06em;cursor:none;
+  transition:all .22s;
+}
+.proj-link:hover{background:rgba(26,140,158,.15);border-color:#1a8c9e;color:#fff;transform:translateY(-1px)}
+.proj-link::before{content:'↗';font-size:.75rem}
+
 /* ── PROJECTS ── */
 #projects{background:rgba(255,255,255,.015)}
 .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2px}
@@ -602,14 +613,32 @@ footer a{color:#1558a8;text-decoration:none;font-size:.78rem}
 <section id="experience">
   <p class="sec-label reveal">Career History</p>
   <h2 class="sec-title reveal">Professional<br>Experience</h2>
-  <p class="sec-sub reveal">Five roles across telecoms, education, digital agency, and research — all in Nigeria's tech landscape.</p>
+  <p class="sec-sub reveal">Six roles across telecoms, education, digital agency, and research — all in Nigeria's tech landscape.</p>
 
   <div class="timeline">
 
     <div class="tl-item reveal">
       <div class="tl-top">
         <div>
-          <div class="tl-title">ICT Instructor &amp; Technical Support Officer (NYSC) <!--<span class="tl-badge">Current</span>--> </div>
+          <div class="tl-title">Retail Engineer <span class="tl-badge">Current</span></div>
+          <div class="tl-org">ipNX Nigeria Limited · Lagos State</div>
+        </div>
+        <div class="tl-dates">Mar 2025 – Present</div>
+      </div>
+      <ul class="tl-bullets">
+        <li>Deploy, configure, and commission customer-premises network equipment (routers, modems, mesh Wi-Fi systems) across residential and enterprise client sites, ensuring installations meet technical and quality specifications.</li>
+        <li>Conduct systematic on-site network diagnostics, signal testing, and fault isolation to resolve last-mile broadband connectivity issues, maintaining consistently high first-visit resolution rates.</li>
+        <li>Serve as the primary technical interface between ipNX and its clients — translating complex network infrastructure solutions into clear, accessible guidance for non-technical customers and stakeholders.</li>
+        <li>Coordinate with internal engineering and support teams on escalations, spare parts procurement, and infrastructure performance monitoring to ensure SLA compliance and service continuity.</li>
+        <li>Support new client onboarding, product demonstrations, and technical solution presentations for prospective customers — contributing to contract acquisition, retention, and revenue growth.</li>
+        <li>Prepare accurate service reports, technical documentation, and maintenance logs in line with company standards and operational requirements.</li>
+      </ul>
+    </div>
+
+    <div class="tl-item reveal">
+      <div class="tl-top">
+        <div>
+          <div class="tl-title">ICT Instructor &amp; Technical Support Officer (NYSC)</div>
           <div class="tl-org">Shekinah International School · Asaba, Delta State</div>
         </div>
         <div class="tl-dates">Jan 2025 – Dec 2025</div>
@@ -690,7 +719,7 @@ footer a{color:#1558a8;text-decoration:none;font-size:.78rem}
 <section id="projects">
   <p class="sec-label reveal">Selected Work</p>
   <h2 class="sec-title reveal">Key Projects</h2>
-  <p class="sec-sub reveal">Technical projects spanning embedded IoT hardware, commercial web platforms, and network infrastructure.</p>
+  <p class="sec-sub reveal">Technical projects spanning embedded IoT hardware, live commercial web platforms, and network infrastructure.</p>
   <div class="projects-grid">
 
     <div class="proj-card reveal reveal-delay-1">
@@ -713,19 +742,70 @@ footer a{color:#1558a8;text-decoration:none;font-size:.78rem}
 
     <div class="proj-card reveal reveal-delay-2">
       <div class="proj-thumb">
-        <div class="proj-thumb-inner pt-2">🌐</div>
+        <div class="proj-thumb-inner pt-2">⚡</div>
       </div>
       <div class="proj-body">
         <div class="proj-type">Web Development · E-Commerce · Freelance</div>
-        <h3>Business Website Suite with Paystack Payment Integration</h3>
-        <p>Delivered end-to-end web solutions for multiple SME clients — requirements gathering, wireframing, build, launch, and ongoing maintenance. Configured Paystack gateways enabling digital payments and automated reconciliation. SEO strategies drove measurable traffic growth.</p>
+        <h3>Gen-Zee — Digital Platform</h3>
+        <p>Modern web platform built and deployed on Vercel. Full responsive design with seamless user experience across all devices.</p>
+        <div class="proj-stack">
+          <span class="stack-item">HTML / CSS / JS</span>
+          <span class="stack-item">Vercel</span>
+          <span class="stack-item">Responsive Design</span>
+        </div>
+        <a href="https://gen-zee.vercel.app/" target="_blank" rel="noopener" class="proj-link">View Live Site</a>
+      </div>
+    </div>
+
+    <div class="proj-card reveal reveal-delay-3">
+      <div class="proj-thumb">
+        <div class="proj-thumb-inner pt-1">🏥</div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-type">Web Development · Healthcare · Freelance</div>
+        <h3>Mem Scepter BHC — Business Website</h3>
+        <p>Professional business website for a healthcare client — brand-aligned design, structured service pages, and optimised for lead generation and organic search.</p>
+        <div class="proj-stack">
+          <span class="stack-item">HTML / CSS / JS</span>
+          <span class="stack-item">On-Page SEO</span>
+          <span class="stack-item">CMS</span>
+        </div>
+        <a href="https://memscepterbhc.com/" target="_blank" rel="noopener" class="proj-link">View Live Site</a>
+      </div>
+    </div>
+
+    <div class="proj-card reveal reveal-delay-1">
+      <div class="proj-thumb">
+        <div class="proj-thumb-inner pt-3">🍽️</div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-type">Web Development · Food & Hospitality · Freelance</div>
+        <h3>Ejiro Kitchen — Restaurant Website</h3>
+        <p>Vibrant digital presence for a food business — menu showcase, brand storytelling, and online customer engagement optimised for conversions.</p>
+        <div class="proj-stack">
+          <span class="stack-item">HTML / CSS / JS</span>
+          <span class="stack-item">Vercel</span>
+          <span class="stack-item">UX Design</span>
+        </div>
+        <a href="https://ejiro-kitchen.vercel.app/" target="_blank" rel="noopener" class="proj-link">View Live Site</a>
+      </div>
+    </div>
+
+    <div class="proj-card reveal reveal-delay-2">
+      <div class="proj-thumb">
+        <div class="proj-thumb-inner pt-2">🌐</div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-type">Web Development · Education · Freelance</div>
+        <h3>Daddy 6ix — Academy Website with Paystack Integration</h3>
+        <p>Full-featured academy website with integrated Paystack payment gateway enabling digital enrolments and transactions. SEO strategies drove measurable organic traffic growth.</p>
         <div class="proj-stack">
           <span class="stack-item">HTML / CSS / JS</span>
           <span class="stack-item">Paystack API</span>
           <span class="stack-item">On-Page SEO</span>
           <span class="stack-item">Schema Markup</span>
-          <span class="stack-item">CMS</span>
         </div>
+        <a href="https://daddy6ix.com/" target="_blank" rel="noopener" class="proj-link">View Live Site</a>
       </div>
     </div>
 
